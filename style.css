@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffdd57;
+}
+
+.section {
+  padding: 60px 40px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#home {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#home span {
+  color: #ffdd57;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #ffdd57;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f4c400;
+}
+
+.skills-container div {
+  margin-bottom: 15px;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #ffdd57;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+a {
+  color: #ffdd57;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
